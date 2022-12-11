@@ -1,0 +1,674 @@
+//*--------------------------------------variables---------------------------------------------------------------------------------
+$ct: 1245px;
+$elg:1200px;
+$lg:992px;
+$md:767px;
+$sm:479px;
+//*--------------------------------------media---------------------------------------------------------------------------------
+//--------------------------------------1500px---------------------------------------------------------------------------------
+@media(max-width:1500px){
+    //--------------------------------------header---------------------------------------------------------------------------------
+    .header{
+        &__body{
+            display: block;
+            text-align: center;
+            padding: 25px 0px;
+        }
+        &__logo{
+            margin: 0px 0px 30px 0px;
+        }
+        &__info{
+            justify-content: center;
+        }
+        &__menu{
+            margin: 0px 0px 10px 0px;
+        }
+    }   
+    .menu-header{
+        &__list{
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+            li, &:last-child{
+                padding: 0 20px;
+                margin: 0px 0px 0px 0px;
+               margin-bottom: 20px;
+            }
+        }
+    } 
+}
+//--------------------------------------ct---------------------------------------------------------------------------------
+@media(max-width:$ct){
+     
+}
+//--------------------------------------elg---------------------------------------------------------------------------------
+@media(max-width:$elg){
+//--------------------------------------reusable---------------------------------------------------------------------------------
+.title_b{
+    font-size: 75px;
+}
+     //--------------------------------------direction---------------------------------------------------------------------------------
+.direction {
+
+    &__body {
+      padding: 150px 0px 16.5px 0px;
+    }
+}
+//--------------------------------------area---------------------------------------------------------------------------------
+.area{
+    &__body{
+            padding: 75px 0px 75px 0px;
+    }
+}
+//--------------------------------------team---------------------------------------------------------------------------------
+.team {
+
+  &__body {
+    padding: 70px 0px 40px 0px;
+  }
+  &__row{
+    display: block;
+    max-width: 50%; 
+    margin: 0 auto;
+}   
+&__column{
+    padding: 0;
+}
+}
+//--------------------------------------excoursion---------------------------------------------------------------------------------
+.excoursion {
+
+  &__body {
+    padding: 70px 0px 100px 0px;
+  }
+  &__row{
+    flex-wrap: wrap;
+  }
+  &__column{
+    flex: 0 1 50%;
+  }
+  &__title{
+    &:not(:last-child){
+    margin: 0px 100px 0px 0px
+    }
+  }
+}
+//--------------------------------------contacts---------------------------------------------------------------------------------
+.contacts{
+    &__body{
+        padding: 100px 0px 65px 0px;
+        display: block;
+        text-align: center;
+    }
+    &__info{
+        &:not(:last-child){
+        margin: 0px 0px 30px 0px
+        }
+    }
+    &__form{
+        margin: 0 auto;
+    }
+    &__type {
+        display:block;
+        min-width: auto;
+        &:not(:last-child){
+        margin: 0px 0px 10px 0px
+        }
+      }
+}
+}
+//--------------------------------------lg---------------------------------------------------------------------------------
+@media(max-width:$lg){
+//--------------------------------------main-block---------------------------------------------------------------------------------
+.main-block{
+    &__body{
+        padding: 382px 0px 80px 0px;
+    }
+}
+.direction {
+
+    &__body {
+      padding: 120px 0px 16.5px 0px;
+    }
+    &__content{
+        margin: 0;
+    }
+    &__column{
+        flex: 0 1 100%;
+        padding: 0;
+    }
+}
+//--------------------------------------area---------------------------------------------------------------------------------
+.area{
+    &__body{
+            padding: 65px 0px 60px 0px;
+    }
+}
+.top-area{
+    flex-direction: column;
+    align-items: center;
+    &__text{
+        flex: 0 1 auto;
+    }
+    &__title {
+    &:not(:last-child){
+    margin: 0px 0px 10px 0px
+    }
+  }
+  &__subtitle{
+    &:not(:last-child){
+    margin: 0px 0px 20px 0px
+    }
+  }
+  &__top{
+    &:not(:last-child){
+    margin: 0px 0px 20px 0px
+    }
+  }
+}
+.item-content-area{
+    flex-wrap: wrap;
+    &_r{
+        .item-content-area__image{
+            margin-right: 0;
+        }
+    }
+    &__top{
+        text-align: center;
+        &:not(:last-child){
+        margin: 0px 0px 25px 0px
+        }
+    }
+    &__title{
+        &:not(:last-child){
+        margin: 0px 0px 15px 0px
+        }
+    }
+    &__subtitle{
+        justify-content: center;
+    }
+    &__body{
+        &:not(:last-child){
+            margin: 0px 0px 30px 0px;
+        }
+        flex: 0 1 100%;
+    }
+    &__image{
+        text-align: center;
+        padding-top: 0;
+        img{
+            position: relative;
+        }
+        flex: 0 1 100%;
+    }
+}
+//--------------------------------------about---------------------------------------------------------------------------------
+.about {
+    &__body {
+    padding: 60px 0px 90px 0px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__content{
+    flex: 0 1 100%;
+     &:not(:last-child){
+    margin: 0px 0px 30px 0px
+    }
+  }
+  &__image{
+    flex: 0 1 100%;
+  }
+  }
+//--------------------------------------abroad---------------------------------------------------------------------------------
+.abroad{
+    &__body{
+            padding: 60px 0px 70px 0px;
+    }
+}
+//--------------------------------------services---------------------------------------------------------------------------------
+.services {
+
+    &__body {
+      padding: 70px 0 35px 0;
+    }
+    &__column{
+        flex: 0 1 50%;
+    }
+}
+//--------------------------------------advantages---------------------------------------------------------------------------------
+.advantages {
+
+  &__body {
+    padding: 70px 0px;
+  }
+}
+//--------------------------------------projects---------------------------------------------------------------------------------
+.projects {
+
+  &__body {
+    padding: 70px 0px 45px 0;
+  }
+}
+//--------------------------------------team---------------------------------------------------------------------------------
+.team{
+    &__row{
+        max-width: 100%;
+    }
+}
+.item-team{
+    &__body{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+//--------------------------------------footer---------------------------------------------------------------------------------
+.footer{
+    &__body{
+        flex-direction: column;
+        text-align: center;
+        >*{
+            &:not(:last-child){
+            margin: 0px 0px 0px 0px
+            }
+        }
+    }
+    &__logo{
+        &:not(:last-child){
+        margin: 0px 0px 20px 0px
+        }
+    }
+    &__menu{
+        &:not(:last-child){
+        margin: 0px 0px 5px 0px
+        }
+    }
+}
+.menu-footer{
+    &__list{
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        li, &:last-child{
+            padding: 0 20px;
+            margin: 0px 0px 0px 0px;
+           margin-bottom: 15px;
+        }
+    }
+}
+}
+//--------------------------------------mb---------------------------------------------------------------------------------
+@media(max-width:$md){
+//--------------------------------------reusable---------------------------------------------------------------------------------
+.title{
+    font-size: 40px;
+}
+.title_b{
+    font-size: 66px;
+}
+//--------------------------------------main-block---------------------------------------------------------------------------------
+.main-block{
+    &__body{
+        padding: 250px 0px 55px 0px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 48px;
+    }
+}
+//--------------------------------------direction---------------------------------------------------------------------------------
+.direction {
+
+    &__body {
+      padding: 100px 0px 16.5px 0px;
+    }
+}
+//--------------------------------------area---------------------------------------------------------------------------------
+.area{
+    &__body{
+        padding: 70px 0px 50px 0px;
+        text-align: center;
+    }
+}
+//--------------------------------------abroad---------------------------------------------------------------------------------
+.abroad{
+    &__body{
+            padding: 40px 0px 50px 0px;
+    }
+}
+//--------------------------------------advantages---------------------------------------------------------------------------------
+.advantages {
+
+  &__body {
+    padding: 40px 0px 50px 0;
+    flex-wrap: wrap;
+  }
+  &__content{
+    flex: 0 1 100%;
+    &:not(:last-child){
+    margin: 0px 0px 30px 0px
+    }
+  }
+  &__image{
+    text-align: center;
+    flex: 0 1 100%;
+  }
+}
+//--------------------------------------projects---------------------------------------------------------------------------------
+.projects {
+
+  &__body {
+    padding: 55px 0px 35px 0;
+  }
+  &__column{
+    flex: 0 1 100%;
+  }
+}
+//--------------------------------------team---------------------------------------------------------------------------------
+.team {
+
+    &__body {
+      padding: 45px 0px 25px 0px;
+    }
+}
+//--------------------------------------excoursion---------------------------------------------------------------------------------
+.excoursion {
+
+  &__body {
+    padding: 45px 0px 80px 0px;
+  }
+}
+//--------------------------------------contacts---------------------------------------------------------------------------------
+.contacts{
+    &__body{
+        padding: 60px 0px 40px 0px;
+    }
+    &__info{
+        &:not(:last-child){
+        margin: 0px 0px 25px 0px
+        }
+    }
+    &__map{
+        iframe{
+            max-width: 100%;
+        }
+    }
+
+}
+.form-contacts{
+    &__body{
+        display: flex;
+        flex-direction: column;
+        padding: 32px 40px;
+    }
+    &__input{
+        padding-bottom: 25px;
+        &::placeholder{
+            white-space: pre-wrap;
+        }
+    }
+}
+}
+//--------------------------------------600px---------------------------------------------------------------------------------
+@media(max-width:600px){
+//--------------------------------------services---------------------------------------------------------------------------------
+.services {
+
+    &__body {
+      padding: 50px 0 20px 0;
+    }
+    &__column{
+        flex: 0 1 100%;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+//--------------------------------------excoursion---------------------------------------------------------------------------------
+.excoursion {
+    &__top{
+        display: block;
+        text-align: center;
+        &::after{
+            content:'';
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        &:not(:last-child){
+        margin: 0px 0px 15px 0px
+        }
+    }
+  &__column{
+    flex: 0 1 100%;
+  }
+}        
+}
+//--------------------------------------sm---------------------------------------------------------------------------------
+@media(max-width:$sm){
+//--------------------------------------reusable---------------------------------------------------------------------------------
+.title_b{
+    font-size: 56px;
+}
+     //--------------------------------------header---------------------------------------------------------------------------------
+     .header{
+        &__info{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__adress{
+            text-align: center;
+            margin: 0px 0px 20px 0px;
+        }
+
+     }
+     .menu-header{
+        &__list{
+            flex-direction: column;
+        }
+     }
+//--------------------------------------main-block---------------------------------------------------------------------------------
+.main-block{
+    &__body{
+        padding: 180px 0px 40px 0px;
+    }
+    &__title{
+        text-align: center;
+        font-size: 32px;
+    }
+}
+.direction {
+
+    &__body {
+      padding: 80px 0px 16.5px 0px;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__column{
+        margin: 0px 0px 50px 0px;
+    }
+}
+.item-direction{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__number{
+        &:not(:last-child){
+        margin: 0px 0px 40px 0px
+        }
+    }
+}
+//--------------------------------------area---------------------------------------------------------------------------------
+.area{
+    &__body{
+        padding: 40px 0px 40px 0px;
+    }
+}
+.item-content-area{
+    &__subtitle{
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &__number{
+        &:not(:last-child){
+            margin: 0px 0px 5px 0px;
+        }
+    }   
+}
+//--------------------------------------about---------------------------------------------------------------------------------
+.about {
+    &__body {
+    padding: 40px 0px 55px 0px;
+  }
+  &__image{
+    height: 100%;
+    padding-top: 0;
+    img{
+       position: relative;
+    }
+  }
+}
+//--------------------------------------abroad---------------------------------------------------------------------------------
+.abroad{
+    &__body{
+            padding: 35px 0px 40px 0px;
+    }
+    &__subtitle{
+        font-size: 16px;
+    }
+}
+//--------------------------------------services---------------------------------------------------------------------------------
+.services{
+    &__body{
+        text-align: center;
+    }
+    &__column{
+        margin: 0px 0px 32px 0px;
+    }
+    &__title{
+        &:not(:last-child){
+            margin: 0px 0px 35px 0px;
+        }
+    }
+}
+//--------------------------------------advantages---------------------------------------------------------------------------------
+.advantages {
+
+  &__body {
+    padding: 20px 0px 50px 0;
+  }
+  &__title{
+    font-size: 34px;
+  }
+}
+//--------------------------------------projects---------------------------------------------------------------------------------
+.projects {
+
+  &__body {
+    padding: 35px 0px 25px 0;
+  }
+  &__top{
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    &:not(:last-child){
+    margin: 0px 0px 35px 0px
+    }
+  }
+  &__title{
+    flex: 0 1 100%;
+    &:not(:last-child){
+    margin: 0px 0px 15px 0px
+    }
+  }
+}
+.item-projects{
+    &__hover{
+        img{
+            max-width: 100px;
+            max-height: 30px;
+            object-fit: contain;
+        }
+    }
+}
+//--------------------------------------team---------------------------------------------------------------------------------
+.team {
+
+    &__body {
+      padding: 45px 0px 25px 0px;
+    }
+    &__employees{
+        flex-direction: column;
+        margin: 0;
+    }
+    &__item{
+        padding: 0;
+    }
+}
+.item-team{
+    &_b{
+        .item-team{
+            &__body{
+                padding: 80px 0px 0px 0px;
+            }
+        }
+    }
+    &__body{
+        max-width: 90%;
+    }
+}
+//--------------------------------------excoursion---------------------------------------------------------------------------------
+.excoursion{
+    &__body {
+      padding: 30px 0 20px 0;
+      text-align: center;
+    }
+    &__title{
+        font-size: 30px;
+    }
+    &__text{
+        &:not(:last-child){
+        margin: 0px 0px 40px 0px
+        }
+    }
+}
+//--------------------------------------contacts---------------------------------------------------------------------------------
+.contacts{
+    &__body{
+        padding: 40px 0px 20px 0px;
+    }
+    &__title{
+        &:not(:last-child){
+        margin: 0px 0px 25px 0px
+        }
+    }
+}
+.form-contacts{
+    &__body{
+        padding: 20px 20px;
+    }
+}
+//--------------------------------------footer---------------------------------------------------------------------------------
+.menu-footer{
+    &__list{
+        display: block;
+    }
+}
+}
+//--------------------------------------350px---------------------------------------------------------------------------------
+@media(max-width:350px){
+//--------------------------------------main-block---------------------------------------------------------------------------------
+.main-block{
+    &__body{
+        padding: 160px 0px 30px 0px;
+    }
+    &__title{
+        font-size: 30px;
+    }
+}
+}

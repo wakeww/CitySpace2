@@ -1,0 +1,59 @@
+//*-------------footer----------------------------------------------------------------
+.footer {
+    background: #F5F5F5;
+    &__body {
+        min-height: 112px;
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        >*{
+            &:not(:last-child){
+            margin: 0px 20px 0px 0px
+            }
+        }
+    }
+
+    &__logo {
+        img{
+           max-width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+    }
+
+    &__menu {
+    }
+    &__info {
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    line-height: 130%;
+    }
+}
+
+.menu-footer {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        li{
+            margin: 0px 32px 0px 0px;
+        }
+    }
+
+    &__link {
+        &:hover{
+            color:#88C558;
+        }
+        transition: all 0.4s ease 0s;
+        font-size: 15px;
+        line-height: 110%;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    }
+}
+
